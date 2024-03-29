@@ -54,7 +54,6 @@ public class Main {
             System.out.println("Год " +i+ " Численность населения " +population);
 //            System.out.println(born);
 //            System.out.println(death);
-
         }
         System.out.println();
     }
