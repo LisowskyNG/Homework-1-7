@@ -61,29 +61,70 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4");
         // Пишем код для задачи 4
-
+        var summ = 15000;
+        int month = 1;
+        while (summ < 12000000) {
+            summ = (int) (summ + summ * 0.07);
+            System.out.println("Месяц " +month+ " Сумма накоплений " +summ);
+            month++;
+        }
+        System.out.println();
     }
 
     public static void task5 () {
         System.out.println("Задача 5");
         // Пишем код для задачи 5
-
+        var summ = 15000;
+        int month = 1;
+        while (summ < 12000000) {
+            summ = (int) (summ + summ * 0.07);
+            if (month % 6 == 0) {
+                System.out.println("Месяц " +month+ " Сумма накоплений " +summ);
+            }
+            month++;
+        }
+        System.out.println();
     }
 
     public static void task6() {
         System.out.println("Задача 6");
         // Пишем код для задачи 6
-
+        var summ = 15000;
+        int month = 1;
+        while (month <= 108) {
+            summ = (int) (summ + summ * 0.07);
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + " Сумма накоплений " + summ);
+            }
+            month++;
+        }
+        System.out.println();
     }
 
     public static void task7() {
         System.out.println("Задача 7");
         // Пишем код для задачи 7
-
+        int days = 31; // Количество дней в месяце
+        int friday = 4; // Дата первой пятницы в месяце
+        for (int i = 1; i <= days ; i++) {
+            if (i == friday) {
+                System.out.println("Сегодня пятница " +friday+ " число. Подготовьте отчет.");
+                friday = friday + 7;
+            }
+        }
+        System.out.println();
     }
     public static void task8 () {
         System.out.println("Задача 8");
         // Пишем код для задачи 8
+        int past = 1824;
+        int future = 2124;
+        for (int i = 0; i <= (future+25); i++) {
+            if (i % 79 == 0 && i >= past && i <= future) {
+                System.out.println(i);
+
+            }
+        }
 
     }
 
